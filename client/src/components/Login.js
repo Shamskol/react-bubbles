@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {axiosWithAuth} from '../utils/axiosWithAuth';
+import axios from "axios"
 import styled from 'styled-components';
 
 const Login = (props) => {
@@ -15,10 +16,11 @@ const Login = (props) => {
    
      const login = e => {
        e.preventDefault();
-       axiosWithAuth()
-       .post('/api/login', credentials)
+       axios
+       .post('http://localhost:5000/api/login', credentials)
          .then(res => {
-           localStorage.setItem('token', res.data.token);
+           
+           localStorage.setItem('token', res.data.payload);
            props.history.push('/bubblepage');
          })
          .catch(err =>{

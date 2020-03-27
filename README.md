@@ -27,7 +27,7 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [x ] Explain what a token is used for.
-A token is primarily user to access information/data from a server or database.
+A token is primarily used to access information/data from a server or database.
 
 - [x ] What steps can you take in your web apps to keep your data secure?
 
@@ -37,11 +37,15 @@ A token is primarily user to access information/data from a server or database.
 A web server is the computer that receives the request for a web page sent by your browser. It uses HTTP to serve the files that form web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients.
 
 - [x ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-CRUD is an acronym for CREATE, READ, UPDATE, DELETE. These form the standard database commands that are the foundation of CRUD.
+CRUD  acronym is often used to describe database operattions.CRUD stands for CREATE, READ, UPDATE, DELETE. These foperations map nicely to HTTP verbs as follows:
+POST : A client wishes to insert or create an object.
+GET: A client wants to read an object.
+PUT: A client wants to update an object.
+DELETE: A client wishes to delete an object.
 
-PUT is the “U” in CRUD, and it stands for UPDATE. We use the PUT method to change a resource’s information. PUT takes in a body object like POST and identifies data that needs to be updated somewhere.
 
-The DELETE HTTP request method is the “D” in CRUD. We use this to delete or destroy data that lives away from our webpage. When we call .delete, we’re instructing the server to remove some information somewhere.
+
+
 
 ## Project Set Up
 
@@ -62,9 +66,9 @@ Follow these steps to set up and work on your project:
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x ] Add your Project Manager as a Reviewer on the Pull-request
+- [x ] PM then will count the HW as done by  merging the branch back into master.
 
 ## Minimum Viable Product
 

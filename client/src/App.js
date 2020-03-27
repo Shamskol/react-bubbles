@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <img src={bubbles} alt="Dori playing with bubbles" style={{height: 300}} />
+      <img src={bubbles} alt=" Playing with bubbles" style={{height: 300}} />
         <Route exact path="/" component={Login} />
         {/* 
           Build a PrivateRoute component that will 
