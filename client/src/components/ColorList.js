@@ -49,12 +49,12 @@ const ColorList = ({ colors, updateColors }) => {
       .catch(err => console.log(err));
   };
 
-  const handleChange = e => {
-    addNewColor({
-      ...addColor,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const handleChange = e => {
+  //   addNewColor({
+  //     ...addColor,
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
 
   const addNewColor = event => {
     // event.preventDefault();
