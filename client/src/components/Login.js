@@ -34,17 +34,17 @@ const Login = (props) => {
      
 
   return (
-    <>
+    <DivStyles>
       <h1>Welcome to the Bubble App!</h1>
       <p>Build a login page here</p>
       <form onSubmit={login}>
-          <input
+          <InputStyles
             type="text"
             name="username"
             value={credentials.username}
             onChange={handleChange}
           />
-          <input
+          <InputStyles
             type="password"
             name="password"
             value={credentials.password}
@@ -54,9 +54,26 @@ const Login = (props) => {
         </form>
 
 
-    </>
+    </DivStyles>
   );
   }
+  const DivStyles = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+const InputStyles = styled.input`
+  padding: 20px 80px;
+  margin: 20px;
+  border: 2px solid #F59BAE;
+  border-radius: 20px;
+`;
+const ButtonStyles = styled.button`
+  padding: 20px 20px;
+  background: #9BF5C5;
+  border-radius: 40px;
+`;
+
 
 
 export default Login;
