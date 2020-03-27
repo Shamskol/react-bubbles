@@ -36,7 +36,7 @@ const Login = (props) => {
   return (
     <DivStyles>
       <h1>Welcome to the Bubble App!</h1>
-      <p>Build a login page here</p>
+      
       <form onSubmit={login}>
           <InputStyles
             type="text"
@@ -50,7 +50,7 @@ const Login = (props) => {
             value={credentials.password}
             onChange={handleChange}
           />
-          <button>Log in</button>
+          <ButtonStyles>Log in</ButtonStyles>
         </form>
 
 
